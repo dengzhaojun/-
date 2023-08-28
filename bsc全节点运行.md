@@ -13,6 +13,20 @@ https://learnblockchain.cn/2018/11/21/ffe590ff5a73
 在这里下载，并且请使用最下面的命令来下载解压https://github.com/48Club/bsc-snapshots
 然后按照教程走就可以了，可以节省很多下载解压时间
 
+根据：https://learnblockchain.cn/article/3621
+设置参数使外网可以访问
+[Node]
+IPCPath = "geth.ipc"
+HTTPHost = "0.0.0.0"
+InsecureUnlockAllowed = false
+HTTPPort = 8845
+HTTPVirtualHosts = ["*"]
+HTTPModules = ["eth", "net", "web3", "txpool", "parlia"]
+WSPort = 8846
+WSModules = ["net", "web3", "eth"]
+WSOrigins = ["*"]
+
+
 ## 常用命令
 + 创建文件夹mkdir 文件夹名
 + wget+网址
